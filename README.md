@@ -14,10 +14,10 @@
 * Автоматическая перезагрузка конфигурации `config.yaml` без перезапуска
 * Экспорт метрик:
 
-  * `mikrotik_ping_rtt_avg{routerboard_name, target}` — средний RTT (мс)
-  * `mikrotik_ping_packet_loss{routerboard_name, target}` — потеря пакетов (%)
-  * `mikrotik_ping_status{routerboard_name, target}` — статус пинга (1/0)
-  * `mikrotik_router_up{routerboard_name}` — доступность API (1/0)
+  * `mikrotik_ping_rtt_avg{routerboard_name, target}` - средний RTT (мс)
+  * `mikrotik_ping_packet_loss{routerboard_name, target}` - потеря пакетов (%)
+  * `mikrotik_ping_status{routerboard_name, target}` - статус пинга (1/0)
+  * `mikrotik_router_up{routerboard_name}` - доступность API (1/0)
 
 ---
 
@@ -79,8 +79,8 @@ routers:
   # ... другие роутеры ...
 ```
 
-* **PING\_ADDRESSES** — список IP или доменов для пинга через запятую.
-* **routers** — ключи YAML: имена роутеров (`routerboard_name`), значения: их IP.
+* **PING\_ADDRESSES** - список IP или доменов для пинга через запятую.
+* **routers** - ключи YAML: имена роутеров (`routerboard_name`), значения: их IP.
 ## Пример отображения метрик в Grafana
 ![1](https://github.com/user-attachments/assets/c940d67a-cdbe-4d9b-94cf-89b70a89cb4e)
 ![2](https://github.com/user-attachments/assets/d9304152-993a-4124-8b70-b8167aa55980)
@@ -103,10 +103,10 @@ This project collects ping statistics (RTT, packet loss, status) from one or mul
 * Automatic reload of `config.yaml` without restart
 * Exports the following metrics:
 
-  * `mikrotik_ping_rtt_avg{routerboard_name, target}` — average RTT in milliseconds
-  * `mikrotik_ping_packet_loss{routerboard_name, target}` — packet loss percentage
-  * `mikrotik_ping_status{routerboard_name, target}` — ping reachability status (1 = success, 0 = failure)
-  * `mikrotik_router_up{routerboard_name}` — API availability status (1 = up, 0 = down)
+  * `mikrotik_ping_rtt_avg{routerboard_name, target}` - average RTT in milliseconds
+  * `mikrotik_ping_packet_loss{routerboard_name, target}` - packet loss percentage
+  * `mikrotik_ping_status{routerboard_name, target}` - ping reachability status (1 = success, 0 = failure)
+  * `mikrotik_router_up{routerboard_name}` - API availability status (1 = up, 0 = down)
 
 ---
 
@@ -174,8 +174,8 @@ routers:
   # ... other routers ...
 ```
 
-* **PING\_ADDRESSES** — comma-separated list of IPs or domains to ping.
-* **routers** — YAML keys: router names (`routerboard_name`), values: their IP addresses.
+* **PING\_ADDRESSES** - comma-separated list of IPs or domains to ping.
+* **routers** - YAML keys: router names (`routerboard_name`), values: their IP addresses.
 
 ---
 
